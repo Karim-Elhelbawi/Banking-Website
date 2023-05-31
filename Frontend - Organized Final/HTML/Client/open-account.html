@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Open Bank Account</title>
+  <link rel="stylesheet" type="text/css" href="../../CSS/Client/open-account.css">
+</head>
+<body>
+  <header>
+    <img src="../../Resources/logo.png" alt="Bank Logo" class="logo">
+    <button class="home-button" onclick="goToHome()">Back to home</button>
+  </header>
+  
+  <main>
+    <h1>Open Bank Account</h1>
+    <form id="application-form" class="application-form" autocomplete="off">
+      <label for="name">Name:</label>
+      <input type="text" id="name" required>
+      
+      <label for="birthdate">Birthdate:</label>
+      <input type="date" id="birthdate" required>
+
+      <label for="Natid">National ID Number:</label>
+      <input type="number" id="natid" required>
+      
+      <label for="account-type">Account Type:</label>
+      <select id="account-type" required>
+        <option value="savings">Savings</option>
+        <option value="checking">Checking</option>
+        <option value="credit">Credit</option>
+      </select>
+      
+      <button type="submit" id="submit-button">Submit</button>
+    </form>
+    <div id="done">
+
+    </div>
+  </main>
+
+  <script src="../../JS/Client/open-account.js"></script>
+</body>
+</html>

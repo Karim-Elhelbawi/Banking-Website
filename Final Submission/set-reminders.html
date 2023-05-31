@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Set Reminder</title>
+  <link rel="stylesheet" type="text/css" href="set-reminder.css">
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="Bank Logo" class="logo">
+    <button class="home-button" onclick="goToHome()">Back to home</button>
+  </header>
+  
+  <main>
+    <h1>Set Reminder</h1>
+    <form id="application-form" class="application-form" autocomplete="off">
+
+      <label for="birthdate">Reminder Date:</label>
+      <input type="date" id="birthdate" required>
+
+      <label for="account-type">Reminder Type:</label>
+      <select id="account-type" required>
+        <option value="savings">Loan Payment</option>
+        <option value="checking">Credit Card</option>
+        <option value="credit">Gas Bill Payment</option>
+        <option value="credit">Electricity Bill Payment</option>
+        <option value="credit">Water Bill Payment</option>
+        <option value="credit">Telephone Bill Payment</option>
+      </select>
+
+      <label for="birthdate">Amount:</label>
+      <input type="number" id="birthdate" required>
+      
+      <button type="submit" id="submit-button">Submit</button>
+    </form>
+    <div id="done">
+
+    </div>
+  </main>
+
+  <script src="set-reminder.js"></script>
+</body>
+</html>

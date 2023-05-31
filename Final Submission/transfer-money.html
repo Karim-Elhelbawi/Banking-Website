@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Transfer Money</title>
+  <link rel="stylesheet" type="text/css" href="transfer-money.css">
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="Bank Logo" class="logo">
+    <button class="home-button" onclick="goToHome()">Back to home</button>
+  </header>
+  
+  <main>
+    <h1>Transfer Money</h1>
+    <form id="application-form" class="application-form" autocomplete="off">
+
+      <label for="birhdate">Account Number:</label>
+      <input type="number" id="bithdate" required>
+      
+      <label for="name">Benefactor Name:</label>
+      <input type="text" id="name" required>
+
+      <label for="Natid">Benifactor account IBAN:</label>
+      <input type="number" id="natid" required>
+
+      <label for="credit-type">Transfer Type:</label>
+      <select id="credit-type" required>
+        <option value="savings">Personal (to another one of your accounts)</option>
+        <option value="savings">Internal</option>
+        <option value="checking">Domestic</option>
+        <option value="credit">International</option>
+      </select>
+      
+      <label for="credit-type">Currency:</label>
+      <select id="credit-type" required>
+        <option value="savings">EGP</option>
+        <option value="checking">USD</option>
+        <option value="credit">EUR</option>
+      </select>
+
+      <label for="account-type">Amount:</label>
+      <input type="number" id="account-type" required>
+
+      
+      
+      <button type="submit" id="submit-button">Submit</button>
+    </form>
+    <div id="done">
+
+    </div>
+  </main>
+
+  <script src="transfer-money.js"></script>
+</body>
+</html>

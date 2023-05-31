@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Reports</title>
+  <link rel="stylesheet" type="text/css" href="../../CSS/Banker/view-report.css">
+</head>
+<body>
+    <header>
+        <img src="../../Resources/logo.png" alt="Bank Logo" class="logo">
+        <button class="home-button" onclick="goToHome()">Back to home</button>
+      </header>
+  
+<main>
+  <h1 class="title">Reports</h1></class>
+  <br>
+  <div class="container">
+    <div class="application" id="application-1">
+      <h2>Report 1</h2>
+      <p>Type: Stolen Credit Card</p>
+      <p>Card Number: 3542 6845 3845 6874</p>
+      <p>Account Number: 213543542542545</p>
+      <p>New Card Requested: No</p>
+
+      <div class="buttons">
+        <button onclick="requestrep()">Request Replacement</button>
+        <button onclick="reply(1)">Send Reply</button>
+        <button onclick="Block()">Block Card</button>
+        <h2>Reply To Report</h2><br>
+        <input type="text" id="birthdate" autocomplete="off">
+      </div>
+    </div>
+    
+    <div class="application" id="application-2">
+      <h2>Report 2</h2>
+      <p>Type: Damaged Credit Card</p>
+      <p>Card Number: 6845 6345 8654 3419</p>
+      <p>Account Number: 12345678987654321</p>
+      <p>New Card Requested: Yes</p>
+    
+      <div class="buttons">
+        <button onclick="requestrep()">Request Replacement</button>
+        <button onclick="reply(2)">Send Reply</button>
+        <button onclick="Block()">Block Card</button>
+        <h2>Reply To Report</h2><br>
+        <input type="text" id="birthdate" autocomplete="off">
+      </div>
+    </div>
+
+  </div>
+</main>
+  <script src="../../JS/Banker/view-report.js"></script>
+</body>
+</html>

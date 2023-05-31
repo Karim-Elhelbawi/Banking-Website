@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Loan Applications</title>
+  <link rel="stylesheet" type="text/css" href="view-loan.css">
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Bank Logo" class="logo">
+        <button class="home-button" onclick="goToHome()">Back to home</button>
+      </header>
+  
+<main>
+  <h1 class="title">Loan Applications</h1></class>
+  <br>
+  <div class="container">
+    <div class="application" id="application-1">
+      <h2>Application 1</h2>
+      <p>Name: Karim Khaled</p>
+      <p>Income: $50,000</p>
+      <p>Credit Score: 720</p>
+      <p>Employment: Full-time</p>
+      <p>Loan Amount: 100,000 EGP</p>
+      <div class="buttons">
+        <button onclick="acceptApplication(1)">Accept</button>
+        <button onclick="rejectApplication(1)">Reject</button>
+      </div>
+    </div>
+    
+    <div class="application" id="application-2">
+      <h2>Application 2</h2>
+      <p>Name: Shahd Amer</p>
+      <p>Income: $40,000</p>
+      <p>Credit Score: 680</p>
+      <p>Employment: Part-time</p>
+      <p>Loan Amount: 150,000 EGP</p>
+      <div class="buttons">
+        <button onclick="acceptApplication(2)">Accept</button>
+        <button onclick="rejectApplication(2)">Reject</button>
+      </div>
+    </div>
+    
+    <div class="application" id="application-3">
+      <h2>Application 3</h2>
+      <p>Name: Habiba Helal</p>
+      <p>Income: $60,000</p>
+      <p>Credit Score: 750</p>
+      <p>Employment: Full-time</p>
+      <p>Loan Amount: 300,000 EGP</p>
+      <div class="buttons">
+        <button onclick="acceptApplication(3)">Accept</button>
+        <button onclick="rejectApplication(3)">Reject</button>
+      </div>
+    </div>
+    
+    <div class="application" id="application-4">
+      <h2>Application 4</h2>
+      <p>Name: Sara Elshemy</p>
+      <p>Income: $55,000</p>
+      <p>Credit Score: 700</p>
+      <p>Employment: Full-time</p>
+      <p>Loan Amount: 500,000 EGP</p>
+      <div class="buttons">
+        <button onclick="acceptApplication(4)">Accept</button>
+        <button onclick="rejectApplication(4)">Reject</button>
+      </div>
+    </div>
+  </div>
+</main>
+  <script src="view-loan.js"></script>
+</body>
+</html>

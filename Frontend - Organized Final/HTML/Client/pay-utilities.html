@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pay Bills</title>
+  <link rel="stylesheet" type="text/css" href="../../CSS/Client/pay-utilities.css">
+</head>
+<body>
+  <header>
+    <img src="../../Resources/logo.png" alt="Bank Logo" class="logo">
+    <button class="home-button" onclick="goToHome()">Back to home</button>
+  </header>
+  
+  <main>
+    <h1>Pay Bills</h1>
+    <form id="application-form" class="application-form" autocomplete="off">
+
+      <label for="account-type1">Account Number:</label>
+      <select id="account-type1" required>
+        <option value="savings">12345678987654321</option>
+        <option value="checking">98765432123456987</option>
+        <option value="credit">56987412321478965</option>
+      </select>
+
+        <label for="account-type">Utility:</label>
+      <select id="account-type" required>
+        <option value="savings">Gas</option>
+        <option value="checking">Electricity</option>
+        <option value="credit">Telephone</option>
+        <option value="credit">Water</option>
+        <option value="credit">Loan</option>
+        <option value="credit">Credit Card</option>
+        <option value="credit">Other</option>
+      </select>
+
+      <label for="Bank Account">Bank Acount Number Your Transferring to (If you previously selected "other"):</label>
+      <input type="number" id="ban">
+
+      <label for="Amount">Amount:</label>
+      <input type="number" id="amount" required>
+      
+      
+      
+      <button type="submit" id="submit-button">Submit</button>
+    </form>
+    <div id="done">
+
+    </div>
+  </main>
+
+  <script src="../../JS/Client/Pay-utilities.js"></script>
+</body>
+</html>

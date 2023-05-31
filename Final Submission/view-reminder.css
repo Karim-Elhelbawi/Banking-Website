@@ -1,0 +1,102 @@
+body {
+    background-image: url("background-image.png");
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #000000;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .logo {
+    width: 200px;
+  }
+  
+  .home-button {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 22px;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+  
+  .home-button:hover {
+    color: #77D4FC;
+  }
+  
+  main {
+    background-color: #16214561;
+    padding: 20px;
+    color: #fff;
+  }
+  
+  h1 {
+    margin-top: 0;
+  }
+  
+  form {
+    display: grid;
+    gap: 10px;
+  }
+  
+  label {
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  input[type="date"],
+  select {
+    padding: 5px;
+  }
+  
+  button[type="submit"] {
+    background-color: #0718C4;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #77D4FC;
+  }
+  
+  .message {
+    margin-top: 20px;
+    color: green;
+    font-weight: bold;
+  }
+  
+  .application-form{
+    margin: 0px 200px   ;
+    margin-bottom: 20px;
+  }
+
+  .message-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff;
+    padding: 10px;
+    border: 1px solid #000000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    transform: translateY(50%);
+    transform: translateX(-50%);
+  }
+  
+  .message-container p {
+    margin: 0;
+  }
+  
+  .message-container button {
+    margin-top: 10px;
+  }
+  

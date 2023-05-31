@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Credit Card Points</title>
+  <link rel="stylesheet" type="text/css" href="credit-card-points.css">
+  
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="Bank Logo" class="logo">
+    <button class="home-button" onclick="goToHome()">Back to home</button>
+
+    <script>
+      function subtractNumbers() {
+        const number1 = parseInt(document.getElementById("number1").value);
+        const number2 = parseInt(document.getElementById("number2").value);
+        
+        const result = number1 - number2;
+        if (result>=0){
+          document.getElementById("number1").value = result;
+          showSuccessMessage();
+          
+        }
+        else{
+          showFailMessage();
+        }
+        
+        
+        
+      }
+    </script>
+  </header>
+  
+  <main>
+    <h1>View and Redeem Credit Card Points</h1>
+    <form id ="application-form" class="application-form" autocomplete="off">
+      Available Points: 
+      <input type="number" id="number1" value="10000" readonly><br><br></label>
+      
+      <label for="name">Amount of Points You Want to Claim:</label>
+      <input type="number" id="number2" required>
+      <br>
+      <button type="submit" onclick="subtractNumbers()"  id="submit-button">Submit</button>
+    </form>
+  </main>
+
+  <script src="credit-card-points.js"></script>
+</body>
+</html>

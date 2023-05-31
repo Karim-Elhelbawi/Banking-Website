@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Reports</title>
+  <link rel="stylesheet" type="text/css" href="view-banker.css">
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Bank Logo" class="logo">
+        <button class="home-button" onclick="goToHome()">Back to home</button>
+      </header>
+  
+<main>
+  <h1 class="title">Reports</h1></class>
+  <br>
+  <div class="container">
+    <div class="application" id="application-1">
+      <h2>Report 1</h2>
+      <p>Type: Page Not Responding</p>
+      <p>Employee ID: 52-1599</p>
+
+      <div class="buttons">
+        <button onclick="reply(1)">Send Reply</button>
+        <h2>Reply To Report</h2><br>
+        <input type="text" id="birthdate" autocomplete="off">
+      </div>
+    </div>
+    
+    <div class="application" id="application-2">
+      <h2>Report 2</h2>
+      <p>Type: Server Down</p>
+      <p>Employee ID: 52-5587</p>
+
+      <div class="buttons">
+        <button onclick="reply(2)">Send Reply</button>
+        <h2>Reply To Report</h2><br>
+        <input type="text" id="birthdate" autocomplete="off">
+      </div>
+    </div>
+
+  </div>
+</main>
+  <script src="view-banker.js"></script>
+</body>
+</html>

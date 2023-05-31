@@ -1,0 +1,120 @@
+body {
+    background-image: url("background-image.png");
+    
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    font-family: Arial, sans-serif;
+    margin: 0 ;
+    padding: 0;
+    background-position: center top;
+  }
+  
+  .container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 5, 5, 0.2);
+    position: relative;
+    top:10%;
+    transform: translateY(0%);
+  }
+  
+  .logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 180px; 
+    height: auto;
+  }
+  
+  
+  h1 {
+    color: #0718C4;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 60px;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    width: calc(100% - 20px); 
+    padding: 10px;
+     border: 1px solid transparent;
+    border-radius: 4px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #0718C4;
+    font-weight: bold;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 0px;
+    height: 40px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    
+
+  }
+  
+  .form-group input[type="submit"] {
+    background-color: #0718C4;
+    color: #fff;
+    cursor: pointer;
+    font-size: 25px
+  }
+  
+  .form-group input[type="submit"]:hover {
+    background-color:#77D4FC;
+    transition: 0.3s all ease-in-out;
+    fill: #77D4FC;
+    transform: scale(1.025);
+  }
+/*
+  svg{
+    transition: 0.5s all ease-in-out;
+  }
+
+  svg:hover{
+    transition: 0.5s all ease-in-out;
+    fill: #0718C4;
+    transform: scale(1.2);
+  }*/
+
+  .log label {
+    display: block;
+    margin-bottom: 5px;
+    color: #0718C4;
+    font-weight: bold;
+  }
+  
+  .log input {
+    width: 100%;
+    padding: 0px;
+    height: 40px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    margin-bottom: 15px;
+
+  }
+  
+  .log input[type="submit"] {
+    background-color: #0718C4;
+    color: #fff;
+    cursor: pointer;
+    font-size: 22px;
+  }
+  
+  .log input[type="submit"]:hover {
+    background-color:#77D4FC;
+    transition: 0.3s all ease-in-out;
+    fill: #77D4FC;
+    transform: scale(1.025);
+  }

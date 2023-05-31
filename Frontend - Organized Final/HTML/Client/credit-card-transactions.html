@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head> 
+  <title>Credit Card Transactions</title>
+  <link rel="stylesheet" type="text/css" href="../../CSS/Client/credit-card-transactions.css">
+</head>
+<body>
+  <header>
+    <img src="../../Resources/logo.png" alt="Bank Logo" class="logo">
+    <button class="home-button" onclick="goToHome()">Back to home</button>
+  </header>
+  
+  <main>
+    <h1>Credit Card Transactions <br></h1>
+    
+    <label for="category">Account Number:</label>
+    <select id="category" onchange="updateSubcategoryOptions()" required>
+      <option value="12345678987654321">12345678987654321</option>
+      <option value="98765432123456789">98765432123456789</option>
+    </select>
+
+    <label for="subcategory" >Credit Card Number:</label>
+    <select id="subcategory" onchange="handleDropdownChange()" required>
+      <option value="1111 1111 1111 1111">1111 1111 1111 1111</option>
+      <option value="2222 2222 2222 2222">2222 2222 2222 2222</option>
+      <option value="3333 3333 3333 3333">3333 3333 3333 3333</option>
+      <option value="4444 4444 4444 4444">4444 4444 4444 4444</option>
+    </select>
+    
+    
+    <form id="application-form" class="application-form" >
+      <label for="name"><br> <br>
+        
+        <div id="element1" style="display: none;"> 
+        Benefactor: Caribou Coffee<br>
+        Amount: 98.98 LE<br>
+        Date: 08/19/2022<br>
+        <br>
+        <br>
+        Benefactor: Carrefour Markets<br>
+        Amount: 2,746.89 LE<br>
+        Date: 11/27/2022<br>
+       </div>
+
+       <div id="element2" style="display: none;"> 
+        Benefactor: Starbucks Coffee<br>
+        Amount: 45.08 LE<br>
+        Date: 08/09/2023<br>
+        <br>
+        <br>
+        Benefactor: Metro Markets<br>
+        Amount: 966.79 LE<br>
+        Date: 23/17/2022<br>
+       </div>
+
+       <div id="element3" style="display: none;"> 
+        Benefactor: Decathlon<br>
+        Amount: 8,753.00 LE<br>
+        Date: 06/21/2022<br>
+        <br>
+        <br>
+        Benefactor: GUC<br>
+        Amount: 42,550 LE<br>
+        Date: 06/15/2022<br>
+       </div>
+       
+       <div id="element4" style="display: none;"> 
+        Benefactor: Uber<br>
+        Amount: 54.23 LE<br>
+        Date: 09/10/2022<br>
+        <br>
+        <br>
+        Benefactor: Careem<br>
+        Amount: 85.89 LE<br>
+        Date: 12/07/2022<br>
+       </div>
+
+      </label>
+      
+  </main>
+
+  <script src="../../JS/Client/credit-card-transactions.js"></script>
+</body>
+</html>

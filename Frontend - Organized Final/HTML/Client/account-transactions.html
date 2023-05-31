@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Account Transactions</title>
+  <link rel="stylesheet" type="text/css" href="../../CSS/Client/account-transactions.css">
+  <script>
+    function handleDropdownChange() {
+      var selectedValue = document.getElementById("dropdown").value;
+      var element1 = document.getElementById("element1");
+      var element2 = document.getElementById("element2");
+      var element3 = document.getElementById("element3");
+      
+      // Reset elements
+      element1.style.display = "none";
+      element2.style.display = "none";
+      element3.style.display = "none";
+      
+      // Update elements based on selected value
+      if (selectedValue === "option1") {
+        element1.style.display = "block";
+      } else if (selectedValue === "option2") {
+        element2.style.display = "block";
+      }else if (selectedValue === "option3") {
+        element3.style.display = "block";}
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <img src="../../Resources/logo.png" alt="Bank Logo" class="logo">
+    <button class="home-button" onclick="goToHome()">Back to home</button>
+  </header>
+  
+  <main>
+    <h1>View Account Transactions</h1>
+
+    <label for="dropdown">Account Number:</label>
+    <select id="dropdown" onchange="handleDropdownChange()" required>
+      <option value="option1">12345678987654321</option>
+      <option value="option2">98765432123456789</option>
+      <option value="option3">54789632123698745</option>
+    </select>
+  
+
+    <form id="application-form" class="application-form" >
+      <label for="name"><br>
+        <div id="element1" style="display: none;"> 
+        Type: Credit Card Payment <br>
+        Benefactor: Caribou Coffee<br>
+        Amount: 98.98 LE<br>
+        Date: 08/19/2022<br>
+        <br>
+        <br>
+        Transaction Type: Credit Card Payment <br>
+        Benefactor: Carrefour Markets<br>
+        Amount: 2,746.89 LE<br>
+        Date: 11/27/2022<br>
+        <br>
+        <br>
+        Transaction Type: Bank Transfer <br>
+        Benefactor: Ahmad Mohammad Kamal<br>
+        Account Number: 978645312258852<br>
+        Amount: 8,000.00 LE<br>
+        Date: 08/19/2022<br>
+        <br>
+        <br>
+        </div>
+      <div id="element2" style="display: none;"> 
+        Type: Credit Card Payment <br>
+        Transaction Type: Bank Transfer <br>
+        Benefactor: Omar Mohammad Eid<br>
+        Account Number: 978645312258852<br>
+        Amount: 69,000.00 LE<br>
+        Date: 04/07/2022<br>
+        <br>
+        <br>
+        Transaction Type: Gas Bill <br>
+        Benefactor: Ahmad Mohammad Kamal<br>
+        Account Number: 978645312258852<br>
+        Amount: 8,000.00 LE<br>
+        Date: 08/19/2022<br>
+        <br>
+        <br>Transaction Type: Water Bill <br>
+        Benefactor: Ahmad Mohammad Kamal<br>
+        Account Number: 978645312258852<br>
+        Amount: 8,000.00 LE<br>
+        Date: 08/19/2022<br>
+        <br>
+      </div>
+      <div id="element3" style="display: none;">
+        Transaction Type: Loan Payment <br>
+        Benefactor: Ahmad Mohammad Kamal<br>
+        Account Number: 978645312258852<br>
+        Amount: 8,000.00 LE<br>
+        Date: 08/19/2022<br>
+        <br>
+        <br>Transaction Type: Telephone Bill <br>
+        Benefactor: Ahmad Mohammad Kamal<br>
+        Account Number: 978645312258852<br>
+        Amount: 8,000.00 LE<br>
+        Date: 08/19/2022<br>
+        <br>
+        <br>Transaction Type: Electricity Bill <br>
+        Benefactor: Ahmad Mohammad Kamal<br>
+        Account Number: 978645312258852<br>
+        Amount: 8,000.00 LE<br>
+        Date: 08/19/2022<br>
+        <br>
+        <br>
+      </div>
+      </label>
+      
+  </main>
+
+  <script src="../../JS/Client/account-transactions.js"></script>
+</body>
+</html>

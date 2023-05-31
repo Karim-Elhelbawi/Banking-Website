@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bank Login</title>
+  <link rel="stylesheet" type="text/css" href="../CSS/login.css">
+</head>
+<body>
+  <div class="container">
+    <img src="../Resources/logo.png" alt="Bank Logo" class="logo">
+    <h1>LOGIN</h1>
+    <form id="login-form" autocomplete="off">
+      <div class="form-group">
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+      <div class="log">
+        <input type="button" value="Login">
+      </div>
+      <div class="log">
+        <input type="button" value="Register" onclick="goreg()">
+      </div>
+    </form>
+  </div>
+
+  <script src="../JS/login.js"></script>
+</body>
+</html>

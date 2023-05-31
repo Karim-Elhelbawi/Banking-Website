@@ -1,0 +1,153 @@
+body {
+    background-image: url("background-image.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #00000051;
+    display: flex;   ;
+  }
+  .ul1{
+    display: flex;
+    flex-direction: column;
+  }
+  header {
+    background-color: #c2cef7c4;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 100vh;
+  }
+  
+  nav {
+    margin-top: 20px;
+    flex-grow: 1;
+  }
+  
+  .logo {
+    width: 200px;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav ul li {
+   /* display: inline;
+    margin-right: 10px;*/
+    display: block;
+    margin-bottom: 60px;
+    transform: translateY(770%);
+  }
+  
+  nav ul li a {
+    color: #070dc49c;
+    text-decoration: none;
+  }
+  
+  main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+  }
+
+ /* .account-info {
+    background-color: #77D4FC;
+    padding: 20px;
+    border-radius: 20px;
+    color: #0718C4;
+    text-align: center;
+    font-size: 18px;
+    transform: translateX(170%);
+  }
+  
+  .account-info h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .account-info p { 
+    margin-bottom: 10px;
+    text-decoration: none;
+  }*/
+  
+  .footer-text {
+    margin-top: auto; 
+    color: #000000;
+    font-size: 10px;
+    transform: translateY(1720%);
+  }
+
+  /*nav ul li button {
+    background-color: transparent;
+    border: none;
+    color: #0718C4;
+    padding: 0;
+    font-size: 16px;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+  
+  nav ul li button:hover {
+    color: #7fdbff;
+  }*/
+
+  nav ul li button {
+    background-color: transparent;
+    border: none;
+    color: #0718C4;
+    padding: 0;
+    font-size: 16px;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+  
+  nav ul li:hover button {
+    color: #7fdbff;
+  }
+
+  .account-info {
+    background-color: #d2e0e5;
+    padding: 20px;
+    border-radius: 20px;
+    color: #111a7a;
+    text-align: center;
+    font-size: 18px;
+    transform: translateX(25%);
+  }
+  
+  .account-info h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .account-info p {
+    margin-bottom: 10px;
+    text-decoration: none;
+  }
+
+  .news {
+    background-color: #d2e0e5;
+    padding: 20px;
+    border-radius: 20px;
+    color: #111a7a;
+    text-align: center;
+    font-size: 18px;
+    transform: translateX(13%);
+  }
+  
+  .news h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .news p {
+    margin-bottom: 10px;
+    text-decoration: none;
+  }
